@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class Fib extends Component {
+class Seq extends Component {
   state = {
     seenIndexes: [],
     values: {},
@@ -56,7 +56,7 @@ class Fib extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Enter your index:</label>
+          <label>Enter your k:</label>
           <input
             value={this.state.index}
             onChange={(event) => this.setState({ index: event.target.value })}
@@ -74,4 +74,4 @@ class Fib extends Component {
   }
 }
 
-export default Fib;
+export default Seq;

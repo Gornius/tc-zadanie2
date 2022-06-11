@@ -14,11 +14,11 @@ const sub = redisClient.duplicate();
 // }
 
 function seq(k) {
-  kWord = 1;
-  for (i=0; i<k; i++) {
+  let kWord = 1;
+  for (let i=0; i<k; i++) {
     kWord *= k;
-    return k;
   }
+  return kWord;
 }
 
 sub.on('message', (channel, message) => {

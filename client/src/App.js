@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Documentation from './Documentation';
-import Fib from './Fib';
+import Seq from './Seq';
 
 function App() {
   return (
@@ -11,12 +11,12 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          Przykladowa realizacja zadania nr 2 <br />
-          <Link to="/fib">Fib Calc</Link>
+          Geomteric Sequence Calc<br />
+          <Link to="/seq">Geomteric Sequence Calc</Link>
           <Link to="/documentation">Documentation</Link>
         </header>
         <div>
-          <Route path="/fib" component={Fib} />
+          <Route path="/seq" component={Seq} />
           <Route path="/documentation" component={Documentation} />
         </div>
       </div>

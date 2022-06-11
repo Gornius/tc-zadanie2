@@ -7,7 +7,7 @@ export default () => {
     <div>
       <Link to="/">Go back home</Link>
       <br />
-      Przykładowa architektura usługi "Fib Calc"
+      architektura usługi "Geomteric Sequence Calc"
       <br />
       <img src={arch} alt="arch" />
     </div>
